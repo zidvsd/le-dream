@@ -1,1 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-garamond: 'EB Garamond', serif;
+  --color-primary: #172554;
+  --color-accent: #e0b973;
+  /* --color-accent: #f8c410; */
+  --color-secondary: #bfdbfe;
+  --color-tertiary: #4071b4;
+}
+
+.font-heading {
+  @apply font-garamond font-bold
+}
+
+.font-body {
+  @apply font-montserrat
+}
+
+.custom-container {
+  @apply mx-auto px-4 md:px-6 lg:px-8 max-w-[1280px]
+}
+
+
+.hover-underline {
+  @apply relative inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-full h-[2px] bg-current scale-x-0 origin-right transition-transform duration-500;
+}
+
+.hover-underline:hover::after {
+  @apply scale-x-100 origin-left;
+}
