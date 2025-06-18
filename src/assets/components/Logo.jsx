@@ -7,13 +7,13 @@ const Logo = () => {
       className="flex flex-row items-center justify-center gap-x-1"
     >
       <img
-        src="/logo-icon.webp"
-        className="size-6 object-cover lg:size-12"
+        src="/logo-icon.png"
+        className="size-6 object-cover lg:size-6"
         alt=""
       />
       <img
-        src="/logo-text.webp"
-        className="size-14 object-contain lg:size-28"
+        src="/logo-text.png"
+        className="size-14 object-contain lg:size-16"
         alt=""
       />
     </Link>
