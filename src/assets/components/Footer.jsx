@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="font-body bg-primary text-sm text-gray-300">
       <div className="custom-container mx-auto px-6 py-10">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-4">
           {/* Contact Info */}
           <div className="space-y-2">
             <div className="flex items-start justify-start">
