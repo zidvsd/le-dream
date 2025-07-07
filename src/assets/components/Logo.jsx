@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Logo = () => {
+
+const Logo = ({ iconSize = 2.5, textSize = 10 }) => {
   return (
-    <Link
-      to={"/"}
-      className="flex flex-row items-center justify-center gap-x-1"
-    >
+    <Link to="/" className="flex items-center gap-x-1">
+      {/* Icon Image */}
       <img
         src="/logo-icon.png"
-        className="size-6 object-cover lg:size-6"
-        alt=""
+        style={{ width: `${iconSize}rem`, height: `${iconSize}rem` }}
+        className="object-cover lg:h-6 lg:w-6"
+        alt="Logo Icon"
       />
+
+      {/* Text Image */}
       <img
         src="/logo-text.png"
-        className="size-14 object-contain lg:size-16"
-        alt=""
+        style={{ width: `${textSize}rem`, height: `${textSize}rem` }}
+        className="object-contain lg:h-16 lg:w-40"
+        alt="Logo Text"
       />
     </Link>
   );

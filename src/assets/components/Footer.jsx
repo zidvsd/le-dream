@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter, MapPin } from "lucide-react";
 import Logo from "./Logo";
-
+import { Link } from "react-router-dom";
+import tiktok from "../images/icons/tiktok-icon.svg";
 const Footer = () => {
   const [email, setEmail] = useState("");
 
@@ -12,96 +13,105 @@ const Footer = () => {
   };
 
   return (
-    <footer className="font-body bg-primary text-sm text-gray-300">
+    <footer className="font-body bg-primary text-sm text-gray-400">
       <div className="custom-container mx-auto px-6 py-10">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-4">
+        <div className="grid grid-cols-1 place-items-center gap-10 text-center lg:grid-cols-4 lg:place-items-start lg:text-start">
           {/* Contact Info */}
-          <div className="space-y-2">
-            <div className="flex items-start justify-start">
-              <Logo />
+          <div className="space-y-3">
+            <div className="">
+              <Logo iconSize={4} textSize={6} />
             </div>
-            <p>Lumangbayan, Mimaropa, PH 56073</p>
-            <p>Landline: 077-644-3273</p>
-            <p>Front Office: (+63) 956-974-3213</p>
-            <p>Reservations: (+63) 956-974-3211</p>
-            <p>hotelledream@gmail.com</p>
+            <div className="flex flex-row items-center justify-center gap-x-2">
+              <MapPin className="text-white" />
+              <p>Brgy. Tamag, City of Vigan</p>
+            </div>
+
             <p>Check-in: 2:00 PM</p>
             <p>Check-out: 12:00 PM</p>
           </div>
 
           {/* Hotel Navigation */}
           <div className="flex flex-col space-y-3">
-            <a href="#" className="transition hover:text-white">
-              About Us
+            <h2 className="text-xl font-bold text-neutral-200">Contact</h2>
+            <a className="footer-link-hover" href="tel:+077-644-3273">
+              Landline: 077-644-3273
             </a>
-            <a href="#" className="transition hover:text-white">
-              Contact
+            <a className="footer-link-hover" href="tel:+0956-974-3213">
+              Front Office: (+63) 956-974-3213
             </a>
-            <a href="#" className="transition hover:text-white">
+            <a className="footer-link-hover" href="tel:+0956-974-3211">
+              Reservations: (+63) 956-974-3211
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hotelledream@gmail.com&su=Hotel%20Inquiry&body=Hi%2C%20I%20would%20like%20to%20inquire%20about%20your%20hotel.%20Thank%20you!"
+              target="_blank"
+            >
+              hotelledream@gmail.com
+            </a>
+          </div>
+
+          {/* Quicklinks */}
+          <div className="flex flex-col space-y-3">
+            <h2 className="text-xl font-bold text-neutral-200">
+              Terms & Policies
+            </h2>
+            <a href="#" className="footer-link-hover">
               Privacy Policy
             </a>
-            <a href="#" className="transition hover:text-white">
+            <a href="#" className="footer-link-hover">
               Safety & Security
             </a>
-            <a href="#" className="transition hover:text-white">
+            <a href="#" className="footer-link-hover">
               Terms & Conditions
             </a>
-            <a href="#" className="transition hover:text-white">
+            <a href="#" className="footer-link-hover">
               Supplier Code of Conduct
             </a>
           </div>
 
-          {/* Social Media */}
-          <div className="space-y-3">
-            <p className="font-semibold text-white">Share the love</p>
-            <a
-              href="#"
-              className="flex items-center space-x-2 transition hover:text-white"
-            >
-              <Facebook size={16} /> <span>Facebook</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center space-x-2 transition hover:text-white"
-            >
-              <Twitter size={16} /> <span>Twitter</span>
-            </a>
-            <a
-              href="#"
-              className="flex items-center space-x-2 transition hover:text-white"
-            >
-              <Instagram size={16} /> <span>Instagram</span>
-            </a>
-          </div>
-
           {/* Newsletter */}
-          <div>
-            <p className="mb-3 font-semibold text-white">
-              Subscribe to our newsletter
-            </p>
-            <form onSubmit={handleSubmit} className="flex">
-              <input
-                type="email"
-                required
-                placeholder="Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="rounded-l-md border border-gray-600 bg-gray-700 px-1 py-2 placeholder-gray-400 focus:ring-2 focus:ring-yellow-600 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="bg-accent rounded-r-md px-1 py-2 text-white transition hover:bg-yellow-700"
-              >
-                OK
-              </button>
-            </form>
-            <p className="mt-4 text-xs text-gray-400">We'll never spam you.</p>
+          <div className="flex flex-col space-y-3">
+            <h2 className="text-xl font-bold text-neutral-200">Quicklinks</h2>
+            <Link to="/rooms" className="footer-link-hover">
+              Rooms
+            </Link>
+            <Link to="/amenities" className="footer-link-hover">
+              Amenities
+            </Link>
+            <Link to="/bar-resto" className="footer-link-hover">
+              Bar + Resto
+            </Link>
+            <Link to="/explore" className="footer-link-hover">
+              Explore
+            </Link>
+            <Link to="/about" className="footer-link-hover">
+              About Us
+            </Link>
           </div>
         </div>
 
         {/* Footer bottom */}
-        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-xs text-gray-400">
-          ©2025 Le Dream Hotel, All Rights Reserved
+        <div className="mt-10 flex flex-col-reverse items-center justify-between gap-y-4 border-t border-gray-700 pt-6 text-center text-xs text-gray-400 lg:flex-row">
+          <p> ©2025 Le Dream Hotel, All Rights Reserved</p>
+          {/* Social Media Links */}
+          <div className="flex flex-row items-center justify-center gap-x-4 text-white">
+            <a href="https://www.facebook.com/le.dreamhotel" target="_blank">
+              <Facebook className="hover-opacity size-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/le.dreamhotel?fbclid=IwY2xjawLY6nhleHRuA2FlbQIxMABicmlkETFKdkNoSHJoZktaY2NIcGxJAR66WELhl02mdhiPasKdM_OYWqyTQsWL0cXfJJEHlUa0a87MXbObvf2FZz_x-w_aem_LucH7M9sLH5CfrcwfR6qVw"
+              target="_blank"
+            >
+              <Instagram className="hover-opacity size-6" />
+            </a>
+            <a
+              href="https://www.tiktok.com/@ledreamhotel?fbclid=IwY2xjawLY6pZleHRuA2FlbQIxMABicmlkETFKdkNoSHJoZktaY2NIcGxJAR77-8MwLac8Kf0Z0rBU8L9G6fDw_RW3e54mqSTkkNVJtjTgxo2yH-BvWJZvbg_aem_ZJ60tdThSXkW0Ll1vj9tYg"
+              target="_blank"
+            >
+              {" "}
+              <img className="hover-opacity size-6" src={tiktok} alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -3,4 +3,5 @@ export const navs = [
   { name: "Amenities", path: "amenities" },
   { name: "Bar + Resto", path: "bar-resto" },
   { name: "Explore", path: "explore" },
+  { name: "About", path: "about" },
 ];

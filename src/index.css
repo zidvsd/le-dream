@@ -23,6 +23,13 @@
   @apply mx-auto px-4 md:px-6 lg:px-8 max-w-[1280px]
 }
 
+.footer-link-hover {
+  @apply transition hover:text-white duration-200 ease-in-out
+}
+
+.hover-opacity {
+  @apply duration-300 transition-all ease-in-out hover:opacity-70
+}
 
 .hover-underline {
   @apply relative inline-block;

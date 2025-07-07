@@ -6,6 +6,9 @@ import AmenitiesPage from "../pages/AmenitiesPage";
 import ExplorePage from "../pages/ExplorePage";
 import BarRestoPage from "../pages/BarRestoPage";
 import RoomsPage from "../pages/RoomsPage";
+import ContactPage from "../pages/ContactPage";
+import AboutPage from "../pages/AboutPage";
+import NotFoundPage from "../pages/NotFoundPage";
 const Routing = () => {
   return (
     <BrowserRouter>
@@ -16,6 +19,9 @@ const Routing = () => {
           <Route path="/amenities" element={<AmenitiesPage />}></Route>
           <Route path="/bar-resto" element={<BarRestoPage />}></Route>
           <Route path="/explore" element={<ExplorePage />}></Route>
+          <Route path="/contact" element={<ContactPage />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/*" element={<NotFoundPage />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
