@@ -32,7 +32,7 @@ const MobileNav = () => {
           {/* <-- increased size here */}
           <Menu
             size={40} // <-- Lucide icon size in pixels
-            className={`absolute inset-0 transition-all duration-300 ease-in-out ${
+            className={`absolute inset-0 text-white transition-all duration-300 ease-in-out ${
               isActive
                 ? "scale-75 rotate-90 opacity-0"
                 : "scale-100 rotate-0 opacity-100"

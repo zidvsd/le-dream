@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Logo = ({ iconSize = 2.5, textSize = 10 }) => {
   return (
-    <Link to="/" className="flex items-center gap-x-1">
+    <Link to="/" className="flex items-center justify-center gap-x-1">
       {/* Icon Image */}
       <img
         src="/logo-icon.png"

@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="custom-container mx-auto px-6 py-10">
         <div className="grid grid-cols-1 place-items-center gap-10 text-center lg:grid-cols-4 lg:place-items-start lg:text-start">
           {/* Contact Info */}
-          <div className="space-y-3">
+          <div className="lg:text-md space-y-3">
             <div className="">
               <Logo iconSize={4} textSize={6} />
             </div>
@@ -31,8 +31,8 @@ const Footer = () => {
           </div>
 
           {/* Hotel Navigation */}
-          <div className="flex flex-col space-y-3">
-            <h2 className="text-xl font-bold text-neutral-200">Contact</h2>
+          <div className="lg:text-md flex flex-col space-y-3">
+            <h2 className="text-lg font-bold text-neutral-200">Contact</h2>
             <a className="footer-link-hover" href="tel:+077-644-3273">
               Landline: 077-644-3273
             </a>
@@ -51,8 +51,8 @@ const Footer = () => {
           </div>
 
           {/* Quicklinks */}
-          <div className="flex flex-col space-y-3">
-            <h2 className="text-xl font-bold text-neutral-200">
+          <div className="lg:text-md flex flex-col space-y-3">
+            <h2 className="text-lg font-bold text-neutral-200">
               Terms & Policies
             </h2>
             <a href="#" className="footer-link-hover">
@@ -70,8 +70,8 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="flex flex-col space-y-3">
-            <h2 className="text-xl font-bold text-neutral-200">Quicklinks</h2>
+          <div className="lg:text-md flex flex-col space-y-3">
+            <h2 className="text-lg font-bold text-neutral-200">Quicklinks</h2>
             <Link to="/rooms" className="footer-link-hover">
               Rooms
             </Link>

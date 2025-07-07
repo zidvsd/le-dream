@@ -2,34 +2,45 @@ import { navs } from "../../utils/navLinks";
 import MobileNav from "./MobileNav";
 import Logo from "./Logo";
 import BookButton from "./buttons/BookButton";
-import { Link } from "react-router-dom";
-const Navbar = () => {
-  return (
-    <div className="w-full border-b border-neutral-500">
-      <div className="custom-container flex flex-row items-center justify-between pt-2">
-        {/* left nav / logo */}
-        <>
-          <Logo iconSize={4} textSize={6} />
-        </>
-        <ul className="hidden flex-row items-center space-x-18 lg:flex">
-          {navs.map((nav, index) => (
-            <li key={index}>
-              <Link
-                className="font-body hover-underline text-md font-semibold text-white xl:text-xl"
-                to={`/${nav.path}`}
-              >
-                {nav.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        {/* mobile menu */}
-        <MobileNav />
+import { Link, useLocation } from "react-router-dom";
 
-        {/* contact us and about us */}
+const Navbar = () => {
+  const location = useLocation();
+
+  return (
+    <div className="bg-primary w-full border-b border-neutral-500">
+      <div className="custom-container flex flex-row items-center justify-between pt-2">
+        {/* Left: Logo */}
+        <Logo iconSize={4} textSize={6} />
+
+        {/* Center: Nav Links */}
+        <ul className="hidden flex-row items-center space-x-12 lg:flex">
+          {navs.map((nav, index) => {
+            const isActive = location.pathname === `/${nav.path}`;
+            return (
+              <li key={index}>
+                <Link
+                  to={`/${nav.path}`}
+                  className={`font-body lg:text-md font-semibold text-white transition-all duration-200 xl:text-xl ${
+                    isActive
+                      ? "underline underline-offset-12"
+                      : "hover-underline"
+                  }`}
+                >
+                  {nav.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+
+        {/* Right: Book Button */}
         <div className="hidden lg:flex">
           <BookButton />
         </div>
+
+        {/* Mobile Nav */}
+        <MobileNav />
       </div>
     </div>
   );
