@@ -8,10 +8,10 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="bg-primary w-full border-b border-neutral-500">
+    <div className="bg-primary sticky top-0 z-1000 w-full border-b border-neutral-500">
       <div className="custom-container flex flex-row items-center justify-between pt-2">
         {/* Left: Logo */}
-        <Logo iconSize={4} textSize={6} />
+        <Logo iconSize={3} textSize={5} />
 
         {/* Center: Nav Links */}
         <ul className="hidden flex-row items-center space-x-12 lg:flex">
