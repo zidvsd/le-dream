@@ -31,7 +31,7 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        className="absolute inset-0 -z-10 h-full w-full"
+        className="absolute inset-0 z-100 h-full w-full"
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
@@ -47,7 +47,7 @@ const HeroSection = () => {
 
       {/* Fixed Text Overlay */}
       <div className="custom-container absolute inset-x-0 top-0 z-10 flex h-full w-full flex-col items-center justify-center px-6 py-6 lg:items-start lg:justify-between lg:px-20 lg:pt-16 lg:pb-6">
-        <div className="z-50 flex flex-1 items-start justify-center lg:items-center lg:justify-start">
+        <div className="z-10 flex flex-1 items-center justify-center lg:items-center lg:justify-start">
           <div className="max-w-3xl space-y-2 text-center text-white lg:text-left">
             <h1 className="font-body text-3xl font-light tracking-wider md:text-4xl lg:text-5xl">
               WELCOME TO
@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-auto flex w-full flex-col items-center justify-center gap-y-6 pt-10">
+        <div className="flex w-full flex-col items-center justify-center gap-y-6 pt-10">
           <BookButton />
           <ScrollButton />
         </div>

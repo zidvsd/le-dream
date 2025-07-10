@@ -57,23 +57,5 @@
   color: var(--color-white);
   background-color: var(--color-primary);
   z-index: 100;
-  @apply rounded-full py-2 px-5
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
-  top: 1rem;
-  z-index: 20;
-}
-
-/* Position the group to top-right */
-.swiper-button-prev {
-  right: 3rem;
-  /* Adjust spacing */
-}
-
-.swiper-button-next {
-  right: 1rem;
-  /* Adjust spacing */
+  @apply rounded-full py-2 px-5 hidden lg:flex
 }
