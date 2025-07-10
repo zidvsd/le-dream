@@ -23,7 +23,7 @@ const Navbar = () => {
                   to={`/${nav.path}`}
                   className={`font-body lg:text-md font-semibold text-white transition-all duration-200 xl:text-xl ${
                     isActive
-                      ? "underline underline-offset-12"
+                      ? "underline decoration-2 underline-offset-4"
                       : "hover-underline"
                   }`}
                 >

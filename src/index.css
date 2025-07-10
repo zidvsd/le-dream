@@ -12,11 +12,15 @@
 }
 
 .font-heading {
-  @apply font-garamond font-bold
+  @apply font-garamond font-bold text-white
 }
 
 .font-body {
-  @apply font-montserrat
+  @apply text-white font-montserrat
+}
+
+.font-body-header {
+  @apply font-montserrat font-bold text-white
 }
 
 .custom-container {
