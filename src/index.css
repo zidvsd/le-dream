@@ -59,3 +59,9 @@
   z-index: 100;
   @apply rounded-full py-2 px-5 hidden lg:flex
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-inline: 1rem;
+  z-index: 1000;
+}

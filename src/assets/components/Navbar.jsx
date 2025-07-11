@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-primary sticky top-0 z-1000 w-full border-b border-neutral-500">
-      <div className="custom-container flex flex-row items-center justify-between pt-2">
+      <div className="custom-container flex flex-row items-center justify-between py-1">
         {/* Left: Logo */}
         <Logo iconSize={3} textSize={5} />
 
