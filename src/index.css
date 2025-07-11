@@ -11,6 +11,11 @@
   --color-tertiary: #4071b4;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
 .font-heading {
   @apply font-garamond font-bold text-white
 }

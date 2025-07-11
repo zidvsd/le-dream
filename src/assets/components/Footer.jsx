@@ -1,26 +1,21 @@
 import React, { useState } from "react";
 import { Facebook, Instagram, Twitter, MapPin } from "lucide-react";
-import Logo from "./Logo";
+import Sponsors from "./Sponsors";
 import { Link } from "react-router-dom";
 import tiktok from "../images/icons/tiktok-icon.svg";
+
 const Footer = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Newsletter subscription:", email);
-    setEmail("");
-  };
-
   return (
-    <footer className="font-body bg-primary text-sm text-gray-400">
-      <div className="custom-container mx-auto px-6 py-10">
-        <div className="grid grid-cols-1 place-items-center gap-10 text-center lg:grid-cols-4 lg:place-items-start lg:text-start">
+    <footer className="bg-primary font-montserrat text-sm text-neutral-300">
+      <Sponsors />
+      <div className="custom-container mx-auto mt-12 px-6 pb-10">
+        {/* logo and tripadvisor logo */}
+
+        <div className="mt-12 grid grid-cols-1 place-items-center gap-10 text-center sm:grid-cols-2 sm:place-items-start sm:text-start lg:mt-0 lg:grid-cols-4 lg:place-items-start">
           {/* Contact Info */}
           <div className="lg:text-md space-y-3">
-            <div className="">
-              <Logo iconSize={4} textSize={6} />
-            </div>
+            <h2 className="text-lg font-bold text-neutral-200">Visit Us</h2>
+
             <div className="flex flex-row items-center justify-center gap-x-2">
               <MapPin className="text-white" />
               <p>Brgy. Tamag, City of Vigan</p>
@@ -69,7 +64,7 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Newsletter */}
+          {/* quicklinks */}
           <div className="lg:text-md flex flex-col space-y-3">
             <h2 className="text-lg font-bold text-neutral-200">Quicklinks</h2>
             <Link to="/rooms" className="footer-link-hover">
