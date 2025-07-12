@@ -10,7 +10,7 @@ const ScrollButton = () => {
   return (
     <button
       href="google.com"
-      className="hover-opacity flex cursor-pointer flex-col items-center justify-center gap-y-2"
+      className="hover-opacity flex cursor-pointer flex-col items-center justify-center gap-y-4"
       onClick={scrollToSection}
     >
       <h1 className="font-body-header text-xl text-white">Scroll</h1>

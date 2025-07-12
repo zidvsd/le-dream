@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero-section"
-      className="relative min-h-[70vh] w-full overflow-hidden"
+      className="relative max-h-[80vh] min-h-[85vh] w-full overflow-hidden"
     >
       {/* Background Swiper */}
       <Swiper
@@ -34,15 +34,15 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        className="absolute inset-0 z-10 max-h-[80vh] min-h-[75vh] w-full"
+        className="absolute inset-0 z-10 max-h-[80vh] min-h-[85vh] w-full"
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              className="max-h-[80vh] min-h-[75vh] w-full bg-cover bg-center"
+              className="max-h-[80vh] min-h-[85vh] w-full bg-cover bg-center"
               style={{ backgroundImage: `url(${img})` }}
             >
-              <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute inset-0 bg-black/60" />
             </div>
           </SwiperSlide>
         ))}
@@ -56,7 +56,8 @@ const HeroSection = () => {
               WELCOME TO
             </h1>
             <h1 className="font-heading text-5xl font-bold tracking-[0.2em] md:text-7xl">
-              LEDREAM
+              LE
+              <span className="ml-4">DREAM</span>
             </h1>
             <h1 className="font-heading text-2xl font-bold tracking-[.2em] md:text-3xl lg:text-4xl">
               HOTELS
