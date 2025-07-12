@@ -2,46 +2,39 @@ import React from "react";
 import Logo from "./Logo";
 import tripadvisor from "../images/icons/tripadvisor-icon.svg";
 import booking from "../images/icons/booking-icon.svg";
+
 const Sponsors = () => {
   return (
     <div className="bg-[#f4f0ee]">
       <div className="custom-container flex w-full flex-col items-center bg-[#f4f0ee] pb-4 lg:flex-row">
-        <div className="flex flex-row items-center justify-evenly">
-          <Logo iconSize={4} textSize={8} />
+        <div className="flex w-full flex-row items-center justify-evenly gap-4">
+          <Logo iconSize={3} textSize={6} /> {/* smaller icon & text */}
           {/* flexed in desktop, hidden mobile */}
           <>
             <a
-              href="https://www.booking.com/"
-              className="hidden w-1/3 lg:block lg:w-1/6"
+              href="https://www.tripadvisor.com/"
+              className="hidden lg:block"
               target="_blank"
             >
-              <img className="w-full" src={tripadvisor} alt="" />
+              <img className="w-[140px]" src={tripadvisor} alt="Tripadvisor" />
             </a>
             <a
               href="https://www.booking.com/"
-              className="hidden w-1/4 lg:block lg:w-1/7"
+              className="hidden lg:block"
               target="_blank"
             >
-              <img className="w-full" src={booking} alt="" />
+              <img className="w-[140px]" src={booking} alt="Booking" />
             </a>
           </>
         </div>
 
-        {/* next row in desktop hidden in mobile */}
-        <div className="flex flex-row items-center justify-evenly lg:hidden">
-          <a
-            href="https://www.booking.com/"
-            className="w-1/3 lg:w-1/8"
-            target="_blank"
-          >
-            <img className="w-full" src={tripadvisor} alt="" />
+        {/* mobile view */}
+        <div className="mt-4 flex w-full flex-row items-center justify-evenly gap-4 lg:hidden">
+          <a href="https://www.tripadvisor.com/" target="_blank">
+            <img className="w-[120px]" src={tripadvisor} alt="Tripadvisor" />
           </a>
-          <a
-            href="https://www.booking.com/"
-            className="w-1/3 lg:w-1/7"
-            target="_blank"
-          >
-            <img className="w-full" src={booking} alt="" />
+          <a href="https://www.booking.com/" target="_blank">
+            <img className="w-[120px]" src={booking} alt="Booking" />
           </a>
         </div>
       </div>

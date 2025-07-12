@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero-section"
-      className="relative min-h-[90vh] w-full overflow-hidden"
+      className="relative min-h-[70vh] w-full overflow-hidden"
     >
       {/* Background Swiper */}
       <Swiper
@@ -34,12 +34,12 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        className="absolute inset-0 z-10 h-full w-full"
+        className="absolute inset-0 z-10 max-h-[80vh] min-h-[75vh] w-full"
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              className="h-[90vh] w-full bg-cover bg-center"
+              className="max-h-[80vh] min-h-[75vh] w-full bg-cover bg-center"
               style={{ backgroundImage: `url(${img})` }}
             >
               <div className="absolute inset-0 bg-black/50" />
@@ -52,13 +52,13 @@ const HeroSection = () => {
       <div className="custom-container absolute inset-x-0 top-0 z-20 flex h-full w-full flex-col items-center justify-center px-6 py-6 lg:items-start lg:justify-between lg:px-20 lg:pt-16 lg:pb-6">
         <div className="z-10 flex flex-1 items-center justify-center lg:items-center lg:justify-start">
           <div className="max-w-3xl space-y-2 text-center text-white lg:text-left">
-            <h1 className="font-body text-3xl tracking-wider md:text-4xl lg:text-5xl">
+            <h1 className="font-body text-2xl tracking-wider md:text-3xl lg:text-4xl">
               WELCOME TO
             </h1>
             <h1 className="font-heading text-5xl font-bold tracking-[0.2em] md:text-7xl">
-              LE DREAM
+              LEDREAM
             </h1>
-            <h1 className="font-heading text-3xl font-bold tracking-[.2em] md:text-4xl lg:text-5xl">
+            <h1 className="font-heading text-2xl font-bold tracking-[.2em] md:text-3xl lg:text-4xl">
               HOTELS
             </h1>
             <p className="font-montserrat max-w-md tracking-wide">
