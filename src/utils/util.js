@@ -4,3 +4,9 @@ export const upperCase = (str) => {
 export const handleReload = () => {
   window.location.reload();
 };
+export const handleScroll = (linkId) => {
+  const targetSection = document.getElementById(linkId);
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
