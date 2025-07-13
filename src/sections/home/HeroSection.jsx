@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero-section"
-      className="relative max-h-[80vh] min-h-[85vh] w-full overflow-hidden"
+      className="relative min-h-[80vh] w-full overflow-hidden"
     >
       {/* Background Swiper */}
       <Swiper
@@ -34,12 +34,12 @@ const HeroSection = () => {
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        className="absolute inset-0 z-10 max-h-[80vh] min-h-[85vh] w-full"
+        className="absolute inset-0 z-10 min-h-[80vh] w-full"
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
             <div
-              className="max-h-[80vh] min-h-[85vh] w-full bg-cover bg-center"
+              className="min-h-[80vh] w-full bg-cover bg-center"
               style={{ backgroundImage: `url(${img})` }}
             >
               <div className="absolute inset-0 bg-black/60" />
@@ -70,7 +70,7 @@ const HeroSection = () => {
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-y-6 pt-10">
           <BookButton />
-          <ScrollButton />
+          <ScrollButton linkId="cards-section" />
         </div>
         {/* 👇 Bottom Center Nav Buttons */}
         <div className="relative z-20 flex w-full items-center justify-between gap-4 lg:hidden">

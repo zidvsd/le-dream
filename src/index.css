@@ -29,6 +29,18 @@ html {
   @apply font-montserrat font-bold text-white
 }
 
+.font-header {
+  @apply font-montserrat font-bold text-black
+}
+
+.font-body-black {
+  @apply font-montserrat
+}
+
+.heading-section-responsive {
+  @apply font-montserrat font-bold text-3xl 2xl:text-4xl
+}
+
 .custom-container {
   @apply mx-auto px-5 md:px-7 lg:px-9 max-w-[1440px]
 }

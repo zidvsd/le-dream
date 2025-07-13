@@ -1,8 +1,8 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
-const ScrollButton = () => {
+const ScrollButton = ({ linkId }) => {
   const scrollToSection = () => {
-    const targetSection = document.getElementById("cards-section");
+    const targetSection = document.getElementById(linkId);
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth" });
     }

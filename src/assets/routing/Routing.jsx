@@ -7,7 +7,7 @@ import ExplorePage from "../pages/ExplorePage";
 import BarRestoPage from "../pages/BarRestoPage";
 import RoomsPage from "../pages/RoomsPage";
 import ContactPage from "../pages/ContactPage";
-import AboutPage from "../pages/AboutPage";
+import LegalPage from "../pages/LegalPage";
 import NotFoundPage from "../pages/NotFoundPage";
 const Routing = () => {
   return (
@@ -20,7 +20,7 @@ const Routing = () => {
           <Route path="/bar-resto" element={<BarRestoPage />}></Route>
           <Route path="/explore" element={<ExplorePage />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/legal" element={<LegalPage />}></Route>
           <Route path="/*" element={<NotFoundPage />}></Route>
         </Route>
       </Routes>

@@ -50,18 +50,18 @@ const Footer = () => {
             <h2 className="text-lg font-bold text-neutral-200">
               Terms & Policies
             </h2>
-            <a href="#" className="footer-link-hover">
+            <Link to="/legal/#privacy-section" className="footer-link-hover">
               Privacy Policy
-            </a>
-            <a href="#" className="footer-link-hover">
+            </Link>
+            <Link to="/legal/#safety-section" className="footer-link-hover">
               Safety & Security
-            </a>
-            <a href="#" className="footer-link-hover">
+            </Link>
+            <Link to="/legal/#terms-section" className="footer-link-hover">
               Terms & Conditions
-            </a>
-            <a href="#" className="footer-link-hover">
+            </Link>
+            <Link to="/legal/#conduct-section" className="footer-link-hover">
               Supplier Code of Conduct
-            </a>
+            </Link>
           </div>
 
           {/* quicklinks */}
