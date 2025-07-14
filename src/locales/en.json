@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "rooms": "Rooms",
+    "amenities": "Amenities",
+    "barResto": "Bar + Resto",
+    "explore": "Explore"
+  },
+  "buttons": {
+    "backHome": "Back to Home",
+    "bookNow": "BOOK NOW",
+    "learnMore": "Learn more",
+    "scroll": "Scroll"
+  },
+  "hero": {
+    "welcome": "WELCOME TO",
+    "brand": "LE DREAM",
+    "hotel": "HOTELS",
+    "slogan": "Book your stay with us today, and let us make your dream vacation a reality."
+  },
+  "cards": {
+    "heading": "Top Amenities & Services at Le Dream Hotel",
+    "description": "From stylish accommodations to rooftop dining and seamless guest services, Le Dream Hotel offers everything you need for a comfortable, memorable stay in Vigan.",
+    "learnMore": "Learn more",
+    "items": [
+      {
+        "title": "Comfortable Accommodations",
+        "description": "Family rooms with air-conditioning, private bathrooms, work desks, TVs, and free WiFi for a cozy and convenient stay."
+      },
+      {
+        "title": "Dining & Leisure",
+        "description": "Enjoy local and international cuisine at our restaurant, unwind at the rooftop bar, or grab a drink from the coffee shop—all with free WiFi access."
+      },
+      {
+        "title": "Convenient Services",
+        "description": "24/7 front desk, concierge, tour assistance, and free parking ensure a smooth and stress-free guest experience from check-in to check-out."
+      },
+      {
+        "title": "Nearby Attractions",
+        "description": "Located near Calle Crisologo, Bantay Bell Tower, and more—perfectly positioned to explore Vigan’s rich culture and history."
+      }
+    ]
+  },
+  "video": {
+    "heading": "Explore Our Hotel",
+    "description": "Take a quick video tour and discover our relaxing rooms, luxurious amenities, and stunning views."
+  },
+  "footer": {
+    "visitUs": "Visit Us",
+    "location": "Brgy. Tamag, City of Vigan",
+    "checkIn": "Check-in: 2:00 PM",
+    "checkOut": "Check-out: 12:00 PM",
+    "contact": "Contact",
+    "landline": "Landline: 077-644-3273",
+    "frontOffice": "Front Office: (+63) 956-974-3213",
+    "reservations": "Reservations: (+63) 956-974-3211",
+    "email": "hotelledream@gmail.com",
+    "terms": "Terms & Policies",
+    "privacy": "Privacy Policy",
+    "safety": "Safety & Security",
+    "conditions": "Terms & Conditions",
+    "conduct": "Supplier Code of Conduct",
+    "quicklinks": "Quicklinks",
+    "rooms": "Rooms",
+    "amenities": "Amenities",
+    "barResto": "Bar + Resto",
+    "explore": "Explore",
+    "aboutUs": "About Us",
+    "copyright": "©2025 Le Dream Hotel, All Rights Reserved"
+  }
+}

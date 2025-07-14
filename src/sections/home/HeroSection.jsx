@@ -6,6 +6,7 @@ import BookButton from "../../assets/components/buttons/BookButton";
 import ScrollButton from "../../assets/components/buttons/ScrollButton";
 import PrevButton from "../../assets/components/buttons/PrevButton";
 import NextButton from "../../assets/components/buttons/NextButton";
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 
@@ -16,6 +17,7 @@ import "swiper/css/pagination";
 const heroImages = [heroImg, heroImg2, heroImg3];
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const swiperRef = useRef(null);
 
   return (
@@ -53,24 +55,22 @@ const HeroSection = () => {
         <div className="z-10 flex flex-1 items-center justify-center lg:items-center lg:justify-start">
           <div className="max-w-3xl space-y-2 text-center text-white lg:text-left">
             <h1 className="font-body text-2xl tracking-wider md:text-3xl lg:text-4xl">
-              WELCOME TO
+              {t("hero.welcome")}
             </h1>
             <h1 className="font-heading text-5xl font-bold tracking-[0.2em] md:text-7xl">
-              LE
-              <span className="ml-4">DREAM</span>
+              {t("hero.brand")}
             </h1>
             <h1 className="font-heading text-2xl font-bold tracking-[.2em] md:text-3xl lg:text-4xl">
-              HOTELS
+              {t("hero.hotel")}
             </h1>
             <p className="font-montserrat max-w-md tracking-wide">
-              Book your stay with us today, and let us make your dream vacation
-              a reality.
+              {t("hero.slogan")}
             </p>
           </div>
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-y-6 pt-10">
           <BookButton />
-          <ScrollButton linkId="cards-section" />
+          <ScrollButton linkId="about-section" />
         </div>
         {/* 👇 Bottom Center Nav Buttons */}
         <div className="relative z-20 flex w-full items-center justify-between gap-4 lg:hidden">

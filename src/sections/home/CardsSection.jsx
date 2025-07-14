@@ -1,58 +1,67 @@
 import React from "react";
 import LearnMoreButton from "../../assets/components/buttons/LearnMoreButton";
-import { cards } from "../../data/cardsData";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import {
+  ArrowRight,
+  Utensils,
+  ConciergeBell,
+  BedDouble,
+  MapPinned,
+} from "lucide-react";
+
+const icons = [BedDouble, Utensils, ConciergeBell, MapPinned];
+
 const CardsSection = () => {
+  const { t } = useTranslation();
+  const cardItems = t("cards.items", { returnObjects: true });
+
   return (
-    <section
-      id="cards-section"
-      className="custom-container mt-12 grid grid-cols-1 items-center justify-start gap-y-12 py-32 lg:grid-cols-2"
-    >
-      {/* text div left grid */}
-      <div className="flex flex-col items-center justify-center gap-y-6 text-center lg:items-start lg:text-left">
-        <h1 className="heading-section-responsive text-primary max-w-md">
-          Top Amenities & Services at Le Dream Hotel
-        </h1>
-        <p className="font-montserrat text-neutral-600 lg:max-w-lg">
-          From stylish accommodations to rooftop dining and seamless guest
-          services, Le Dream Hotel offers everything you need for a comfortable,
-          memorable stay in Vigan.
-        </p>
-        <div className="">
-          <LearnMoreButton />
+    <section id="cards-section" className="bg-custom-gray">
+      <div className="custom-container mt-12 grid grid-cols-1 items-center justify-start gap-y-12 py-12 lg:py-24 xl:grid-cols-2">
+        {/* text div left grid */}
+        <div className="flex flex-col items-center justify-center gap-y-6 text-center xl:items-start xl:text-left">
+          <h1 className="heading-section-responsive text-primary max-w-xl">
+            {t("cards.heading")}
+          </h1>
+          <p className="font-montserrat text-neutral-600 lg:max-w-lg">
+            {t("cards.description")}
+          </p>
+          <div className="">
+            <LearnMoreButton />
+          </div>
         </div>
-      </div>
-
-      {/* cards right grid */}
-
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {cards.map((card, id) => (
-          <Link
-            to={`/${card.link}`}
-            key={id}
-            className="hover:border-b-primary hover-utility flex h-full flex-col justify-between rounded-xl border border-b-4 border-neutral-200 border-b-transparent bg-white p-6 text-left shadow-md hover:shadow-xl"
-          >
-            {/* Card top content */}
-            <div className="flex flex-col items-start gap-y-3">
-              <p className="text-4xl">{card.icon}</p>
-              <h2 className="font-body-black text-primary text-xl font-bold">
-                {card.title}
-              </h2>
-              <p className="font-montserrat text-gray-600">
-                {card.description}
-              </p>
-            </div>
-
-            {/* Bottom-aligned Learn More */}
-            <div className="text-tertiary mt-6 flex items-center gap-x-2">
-              <span className="font-body-black text-sm font-bold">
-                Learn more
-              </span>
-              <ArrowRight className="size-4" />
-            </div>
-          </Link>
-        ))}
+        {/* Right cards */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {cardItems.map((card, id) => {
+            const Icon = icons[id];
+            return (
+              <Link
+                to={`/${""}`}
+                key={id}
+                className="hover:border-b-primary hover-utility flex h-full flex-col justify-between rounded-xl border border-b-4 border-neutral-200 border-b-transparent bg-white p-6 text-left shadow-md hover:shadow-xl"
+              >
+                <div className="flex flex-col items-start gap-y-3">
+                  <div className="text-4xl">
+                    {Icon && <Icon className="text-primary size-12" />}
+                  </div>
+                  <h2 className="font-body-black text-primary text-xl font-bold">
+                    {card.title}
+                  </h2>
+                  <p className="font-montserrat text-gray-600">
+                    {card.description}
+                  </p>
+                </div>
+                <div className="text-tertiary mt-6 flex items-center gap-x-2">
+                  <span className="font-body-black text-accent text-sm font-bold">
+                    {t("buttons.learnMore")}
+                  </span>
+                  <ArrowRight className="text-accent size-4" />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 export const navs = [
-  { name: "Rooms", path: "rooms" },
-  { name: "Amenities", path: "amenities" },
-  { name: "Bar + Resto", path: "bar-resto" },
-  { name: "Explore", path: "explore" },
+  { key: "nav.rooms", path: "rooms" },
+  { key: "nav.amenities", path: "amenities" },
+  { key: "nav.barResto", path: "bar-resto" },
+  { key: "nav.explore", path: "explore" },
 ];

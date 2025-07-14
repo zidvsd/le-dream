@@ -9,6 +9,7 @@
   --color-accent: #f8c410;
   --color-secondary: #bfdbfe;
   --color-tertiary: #14386F;
+  --color-custom-gray: #f4f0ee;
   --breakpoint-2xl: 90rem;
 }
 
@@ -38,7 +39,7 @@ html {
 }
 
 .heading-section-responsive {
-  @apply font-montserrat font-bold text-3xl 2xl:text-4xl
+  @apply font-garamond font-bold text-4xl 2xl:text-5xl
 }
 
 .custom-container {

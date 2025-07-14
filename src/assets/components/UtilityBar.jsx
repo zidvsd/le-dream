@@ -3,10 +3,13 @@ import { MapPin, Globe, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import { languages } from "../../data/languages";
 import { useState } from "react";
-import { handleReload } from "../../utils/util";
+import { useTranslation } from "react-i18next";
 const UtilityBar = () => {
+  const { i18n } = useTranslation();
   const [isActive, setIsActive] = useState(false);
-  const [selectedLang, setSelectedLang] = useState("English");
+
+  const currentLang =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   return (
     <div className="bg-tertiary sticky top-0 z-1000 w-full text-white">
@@ -16,27 +19,26 @@ const UtilityBar = () => {
           className={`${isActive ? "bg-primary" : "hover-utility"} hover:bg-primary py relative flex cursor-pointer flex-row items-center gap-x-2 px-2`}
         >
           <Globe size={20} />
-          <p className="font-body select-none">{selectedLang}</p>
+          <p className="font-body select-none">{currentLang.label}</p>
 
           {/* Language options dropdown */}
           <div
             className={`${isActive ? "absolute" : "hidden"} bg-tertiary top-6 left-10 min-w-[120px] flex-col items-start justify-start border border-white shadow-lg`}
           >
-            {languages.map((language, index) => (
+            {languages.map((lang, index) => (
               <p
                 onClick={() => {
-                  if (language !== selectedLang) {
-                    setSelectedLang(language);
-                    handleReload();
-                  }
+                  i18n.changeLanguage(lang.code);
+                  localStorage.setItem("language", lang.code);
                   setIsActive(false);
+                  window.location.reload();
                 }}
                 key={index}
                 className={`font-body hover:bg-primary w-full cursor-pointer px-4 py-2 text-sm transition-colors ${
                   index !== languages.length - 1 ? "border-b border-white" : ""
                 }`}
               >
-                {language}
+                {lang.label}
               </p>
             ))}
           </div>

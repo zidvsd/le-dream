@@ -5,8 +5,8 @@ import booking from "../images/icons/booking-icon.svg";
 
 const Sponsors = () => {
   return (
-    <div className="bg-[#f4f0ee]">
-      <div className="custom-container flex w-full flex-col items-center bg-[#f4f0ee] pb-4 lg:flex-row">
+    <div className="bg-custom-gray">
+      <div className="custom-container bg-custom-gray flex w-full flex-col items-center pb-4 lg:flex-row">
         <div className="flex w-full flex-row items-center justify-evenly gap-4">
           <Logo iconSize={3} textSize={6} /> {/* smaller icon & text */}
           {/* flexed in desktop, hidden mobile */}

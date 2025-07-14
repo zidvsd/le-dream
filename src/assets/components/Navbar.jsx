@@ -4,7 +4,9 @@ import Logo from "./Logo";
 import BookButton from "./buttons/BookButton";
 import { Link, useLocation } from "react-router-dom";
 import UtilityBar from "./UtilityBar";
+import { useTranslation } from "react-i18next";
 const Navbar = () => {
+  const { t } = useTranslation();
   const location = useLocation();
 
   return (
@@ -27,7 +29,7 @@ const Navbar = () => {
                       : "hover-underline"
                   }`}
                 >
-                  {nav.name}
+                  {t(nav.key)}
                 </Link>
               </li>
             );

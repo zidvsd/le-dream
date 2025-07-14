@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { navs } from "../../utils/navLinks";
-
+import i18n from "../../i18n";
+import { useTranslation } from "react-i18next";
 const MobileNav = () => {
+  const { t } = useTranslation();
   const [isActive, setIsActive] = useState(false);
 
   const checkWindowSize = () => {
@@ -66,7 +68,7 @@ const MobileNav = () => {
                   className="font-body hover-underline text-3xl font-semibold text-white"
                   to={`/${nav.path}`}
                 >
-                  {nav.name}
+                  {t(nav.key)}
                 </Link>
               </li>
             ))}

@@ -1,1 +1,5 @@
-export const languages = ["English", "中文", "日本語"];
+export const languages = [
+  { label: "English", code: "en" },
+  { label: "日本語", code: "jp" },
+  { label: "中文", code: "cn" },
+];

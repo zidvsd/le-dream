@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "rooms": "房间",
+    "amenities": "设施",
+    "barResto": "酒吧和餐厅",
+    "explore": "探索"
+  },
+  "buttons": {
+    "backHome": "返回主页",
+    "bookNow": "立即预订",
+    "learnMore": "了解更多",
+    "scroll": "滚动"
+  },
+  "hero": {
+    "welcome": "欢迎来到",
+    "brand": "乐梦酒店",
+    "hotel": "酒店",
+    "slogan": "立即预订住宿，让我们帮您实现梦想假期。"
+  },
+  "cards": {
+    "heading": "乐梦酒店的顶级设施与服务",
+    "description": "从时尚的客房到屋顶餐饮和贴心服务，乐梦酒店为您在维甘的舒适而难忘的住宿体验提供一切。",
+    "learnMore": "了解更多",
+    "items": [
+      {
+        "title": "舒适的住宿环境",
+        "description": "配有空调、私人浴室、书桌、电视和免费WiFi的家庭房，舒适又方便。"
+      },
+      {
+        "title": "餐饮与休闲",
+        "description": "享受本地与国际美食，屋顶酒吧放松一下，或在咖啡厅小酌片刻——全区提供免费WiFi。"
+      },
+      {
+        "title": "便捷服务",
+        "description": "24小时前台、礼宾、旅游协助及免费停车场，让您从入住到退房都轻松无忧。"
+      },
+      {
+        "title": "周边景点",
+        "description": "毗邻克里索罗戈街、班泰钟楼等地，探索维甘的文化与历史再合适不过。"
+      }
+    ]
+  },
+  "video": {
+    "heading": "ホテルを探検",
+    "description": "ビデオツアーでリラックスできる客室、豪華な設備、そして素晴らしい景色をご覧ください。"
+  },
+  "footer": {
+    "visitUs": "访问我们",
+    "location": "维甘市塔马格区",
+    "checkIn": "入住时间：下午2点",
+    "checkOut": "退房时间：中午12点",
+    "contact": "联系方式",
+    "landline": "电话：077-644-3273",
+    "frontOffice": "前台：（+63）956-974-3213",
+    "reservations": "预订：（+63）956-974-3211",
+    "email": "hotelledream@gmail.com",
+    "terms": "条款与政策",
+    "privacy": "隐私政策",
+    "safety": "安全与保障",
+    "conditions": "条款与条件",
+    "conduct": "供应商行为守则",
+    "quicklinks": "快速链接",
+    "rooms": "客房",
+    "amenities": "设施",
+    "barResto": "酒吧+餐厅",
+    "explore": "探索",
+    "aboutUs": "关于我们",
+    "copyright": "©2025 Le Dream 酒店，版权所有"
+  }
+}
