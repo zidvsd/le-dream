@@ -52,8 +52,8 @@ const HeroSection = () => {
 
       {/* Fixed Text Overlay */}
       <div className="custom-container absolute inset-x-0 top-0 z-20 flex h-full w-full flex-col items-center justify-center px-6 py-6 lg:items-start lg:justify-between lg:px-20 lg:pt-16 lg:pb-6">
-        <div className="z-10 flex flex-1 items-center justify-center lg:items-center lg:justify-start">
-          <div className="max-w-3xl space-y-2 text-center text-white lg:text-left">
+        <div className="z-10 flex w-full flex-1 items-center justify-center lg:items-center lg:justify-start 2xl:justify-center">
+          <div className="max-w-3xl space-y-2 text-center text-white lg:text-left 2xl:text-center">
             <h1 className="font-body text-2xl tracking-wider md:text-3xl lg:text-4xl">
               {t("hero.welcome")}
             </h1>

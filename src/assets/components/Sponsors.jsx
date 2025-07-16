@@ -2,13 +2,16 @@ import React from "react";
 import Logo from "./Logo";
 import tripadvisor from "../images/icons/tripadvisor-icon.svg";
 import booking from "../images/icons/booking-icon.svg";
-
+import agoda from "../images/icons/agoda-logo.svg";
 const Sponsors = () => {
   return (
     <div className="bg-custom-gray">
       <div className="custom-container bg-custom-gray flex w-full flex-col items-center pb-4 lg:flex-row">
         <div className="flex w-full flex-row items-center justify-evenly gap-4">
           <Logo iconSize={3} textSize={6} /> {/* smaller icon & text */}
+          <a href="https://www.agoda.com/" target="_blank">
+            <img className="w-[140px]" src={agoda} alt="Booking" />
+          </a>
           {/* flexed in desktop, hidden mobile */}
           <>
             <a

@@ -1,5 +1,6 @@
 import React from "react";
 import founders from "../../assets/images/thumbnails/lorry-engracia-clear.webp";
+import { Trans } from "react-i18next";
 
 const AboutSection = () => {
   return (
@@ -16,36 +17,49 @@ const AboutSection = () => {
         />
 
         {/* Text Content */}
-        <div className="flex flex-col justify-center gap-y-6 text-center">
+        <div className="flex flex-col justify-center gap-y-6 text-center lg:text-left">
           <h1 className="heading-section-responsive font-garamond">
-            About Le Dream Hotel
+            <Trans i18nKey="about.title">About Le Dream Hotel</Trans>
           </h1>
 
           <p className="font-montserrat text-neutral-600">
-            Le Dream Hotel is a family-owned stay in Vigan, founded by{" "}
-            <strong>Lorry and Engracia Salvador</strong> to offer comfort and
-            culture in one destination.
+            <Trans
+              i18nKey="about.founders"
+              components={[
+                <span key="founders" className="text-primary font-bold" />,
+              ]}
+            />
           </p>
 
           <p className="font-montserrat text-neutral-600">
-            Enjoy local and international flavors at our rooftop{" "}
-            <strong>LAK’s Bar & Resto</strong>, with scenic views of the city
-            and sea.
+            <Trans
+              i18nKey="about.rooftop"
+              components={[
+                <span key="rooftop" className="text-primary font-bold" />,
+              ]}
+            />
           </p>
 
           <p className="font-montserrat text-neutral-600">
-            We’re located in <strong>Tamag, Vigan City</strong>—minutes from
-            Calle Crisologo, Baluarte Zoo, and UNP.
+            <Trans
+              i18nKey="about.location"
+              components={[
+                <span key="location" className="text-primary font-bold" />,
+              ]}
+            />
           </p>
 
           <p className="font-montserrat text-neutral-600">
-            We also host events and conferences with a spacious hall and ample
-            parking.
+            <Trans i18nKey="about.events" />
           </p>
 
           <p className="font-montserrat text-neutral-600">
-            At Le Dream Hotel, we’re more than a place to stay —{" "}
-            <strong>we’re your dream getaway.</strong>
+            <Trans
+              i18nKey="about.closing"
+              components={[
+                <span key="closing" className="text-primary font-bold" />,
+              ]}
+            />
           </p>
         </div>
       </div>

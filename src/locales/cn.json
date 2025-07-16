@@ -17,6 +17,14 @@
     "hotel": "酒店",
     "slogan": "立即预订住宿，让我们帮您实现梦想假期。"
   },
+  "about": {
+    "title": "关于 Le Dream 酒店",
+    "founders": "Le Dream 酒店是一家位于维甘的家庭旅馆，由 <0>Lorry 和 Engracia Salvador</0> 创立，致力于在一个地方提供舒适与文化体验。",
+    "rooftop": "在我们的屋顶 <0>LAK’s Bar & Resto</0> 享用本地和国际美食，同时欣赏城市和海景。",
+    "location": "我们位于 <0>维甘市 Tamag</0>，距离 Calle Crisologo、Baluarte 动物园和 UNP 仅数分钟路程。",
+    "events": "我们还提供宽敞的大厅和充足的停车位，适合举办活动和会议。",
+    "closing": "在 Le Dream 酒店，我们不仅是住宿的地方 —— <0>我们是您梦想中的度假地。</0>"
+  },
   "cards": {
     "heading": "乐梦酒店的顶级设施与服务",
     "description": "从时尚的客房到屋顶餐饮和贴心服务，乐梦酒店为您在维甘的舒适而难忘的住宿体验提供一切。",
@@ -43,6 +51,22 @@
   "video": {
     "heading": "ホテルを探検",
     "description": "ビデオツアーでリラックスできる客室、豪華な設備、そして素晴らしい景色をご覧ください。"
+  },
+  "rooms": {
+    "heading": "客房",
+    "description": "在 Le Dream 酒店体验奢华与舒适的完美结合。我们提供多种房型，以满足您的不同需求。每间客房都配备了多项贴心设施，确保您舒适便利的住宿体验。"
+  },
+  "amenities": {
+    "heading": "设施服务",
+    "description": "我们致力于为您提供优质服务，让您的入住更加舒适。我们的设施包括 Kalle Cafe 精品咖啡、iWash 洗衣与干洗服务、机场接送，以及专属服务车等。"
+  },
+  "resto-bar": {
+    "heading": "餐厅与酒吧",
+    "description": "在屋顶餐厅 LAK's Bar + Resto 尽情享受独特的用餐体验。精致美食与迷人景色相得益彰，让您尽享美味与视觉盛宴。"
+  },
+  "explore": {
+    "heading": "探索维甘",
+    "description": "探索维甘这座联合国教科文组织世界遗产城市的魅力。漫步在历史悠久的 Crisologo 街，参观巴鲁阿特动物园，沉浸于这座美丽城市的丰富文化与历史之中。"
   },
   "footer": {
     "visitUs": "访问我们",

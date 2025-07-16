@@ -2,7 +2,7 @@ import React from "react";
 import BookButton from "../../assets/components/buttons/BookButton";
 import { useTranslation } from "react-i18next";
 
-const VideoSection = ({ linkId }) => {
+const VideoSection = () => {
   const { t } = useTranslation();
   return (
     <section id="video-section" className="w-full bg-white px-0 py-20">

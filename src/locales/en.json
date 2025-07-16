@@ -17,6 +17,15 @@
     "hotel": "HOTELS",
     "slogan": "Book your stay with us today, and let us make your dream vacation a reality."
   },
+  "about": {
+    "title": "About Le Dream Hotel",
+    "founders": "Le Dream Hotel is a family-owned stay in Vigan, founded by <0>Lorry and Engracia Salvador</0> to offer comfort and culture in one destination.",
+    "rooftop": "Enjoy local and international flavors at our rooftop <0>LAK’s Bar & Resto</0>, with scenic views of the city and sea.",
+    "location": "We’re located in <0>Tamag, Vigan City</0> —minutes from Calle Crisologo, Baluarte Zoo, and UNP.",
+    "events": "We also host events and conferences with a spacious hall and ample parking.",
+    "closing": "At Le Dream Hotel, we’re more than a place to stay — <0>we’re your dream getaway.</0>"
+  },
+
   "cards": {
     "heading": "Top Amenities & Services at Le Dream Hotel",
     "description": "From stylish accommodations to rooftop dining and seamless guest services, Le Dream Hotel offers everything you need for a comfortable, memorable stay in Vigan.",
@@ -43,6 +52,22 @@
   "video": {
     "heading": "Explore Our Hotel",
     "description": "Take a quick video tour and discover our relaxing rooms, luxurious amenities, and stunning views."
+  },
+  "rooms": {
+    "heading": "Accomodation",
+    "description": "Experience the blend of luxury and comfort at Le Dream Hotel. We offer several distinct room types to cater to your unique needs. Each room is equipped with a host of amenities designed for your comfort and convenience."
+  },
+  "amenities": {
+    "heading": "Accomodation",
+    "description": "We're committed to providing you with top-notch services to enhance your stay. Our amenities include Kalle Cafe' Specialty Coffee, iWash Laundry & Dry-Cleaning, Airport Pick-up & Drop-off, and our Service Van, to name a few.few."
+  },
+  "resto-bar": {
+    "heading": "Accomodation",
+    "description": "Indulge in a unique dining experience at our rooftop restaurant, LAK's Bar + Resto. Dine in style, with a stunning view that complements the exquisite flavors of our menu."
+  },
+  "explore": {
+    "heading": "Accomodation",
+    "description": "Discover the wonders of Vigan, a UNESCO World Heritage Site. Explore the historic streets of Calle Crisologo, visit the Baluarte Zoo, and immerse yourself in the rich culture and heritage of this beautiful city."
   },
   "footer": {
     "visitUs": "Visit Us",

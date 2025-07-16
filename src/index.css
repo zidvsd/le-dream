@@ -39,7 +39,7 @@ html {
 }
 
 .heading-section-responsive {
-  @apply font-garamond font-bold text-4xl 2xl:text-5xl
+  @apply font-montserrat font-bold text-3xl 2xl:text-4xl
 }
 
 .custom-container {
