@@ -70,7 +70,7 @@ const Testimonials = (slidesPerView = 3) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="w-1/2 place-self-center md:mt-12 md:w-1/4 lg:w-1/8">
+      <div className="w-1/2 place-self-center md:mt-12 md:w-1/4 lg:w-1/4 xl:w-1/6">
         <BookButton />
       </div>
     </section>
