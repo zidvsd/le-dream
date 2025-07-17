@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 const VideoSection = () => {
   const { t } = useTranslation();
   return (
-    <section id="video-section" className="w-full bg-white px-0 py-20">
-      <div className="mx-auto grid grid-cols-1 items-start gap-x-12 gap-y-12 sm:container sm:px-4 lg:grid-cols-2 xl:gap-x-0">
+    <section id="video-section" className="section-padding w-full bg-white">
+      <div className="mx-auto grid w-full max-w-[1440px] grid-cols-1 items-start gap-x-6 gap-y-8 sm:px-5 md:px-6 lg:grid-cols-2 lg:px-9 xl:gap-x-0">
         {/* vid*/}
         <div className="aspect-[16/9] w-full overflow-hidden shadow-xl md:rounded-md">
           <iframe
@@ -19,7 +19,7 @@ const VideoSection = () => {
         </div>
 
         {/* text */}
-        <div className="custom-container space-y-6 place-self-center text-center md:pr-6 lg:text-left">
+        <div className="space-y-4 place-self-center px-2 text-center sm:px-0 md:pr-6 lg:text-left">
           <h2 className="text-primary heading-section-responsive font-montserrat font-extrabold">
             {t("video.heading")}
           </h2>

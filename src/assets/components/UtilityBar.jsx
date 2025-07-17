@@ -28,10 +28,10 @@ const UtilityBar = () => {
             {languages.map((lang, index) => (
               <p
                 onClick={() => {
+                  window.location.reload();
                   i18n.changeLanguage(lang.code);
                   localStorage.setItem("language", lang.code);
                   setIsActive(false);
-                  window.location.reload();
                 }}
                 key={index}
                 className={`font-body hover:bg-primary w-full cursor-pointer px-4 py-2 text-sm transition-colors ${

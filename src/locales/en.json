@@ -58,16 +58,52 @@
     "description": "Experience the blend of luxury and comfort at Le Dream Hotel. We offer several distinct room types to cater to your unique needs. Each room is equipped with a host of amenities designed for your comfort and convenience."
   },
   "amenities": {
-    "heading": "Accomodation",
+    "heading": "Amenities",
     "description": "We're committed to providing you with top-notch services to enhance your stay. Our amenities include Kalle Cafe' Specialty Coffee, iWash Laundry & Dry-Cleaning, Airport Pick-up & Drop-off, and our Service Van, to name a few.few."
   },
   "resto-bar": {
-    "heading": "Accomodation",
+    "heading": "Bar + Resto",
     "description": "Indulge in a unique dining experience at our rooftop restaurant, LAK's Bar + Resto. Dine in style, with a stunning view that complements the exquisite flavors of our menu."
   },
   "explore": {
-    "heading": "Accomodation",
+    "heading": "Explore",
     "description": "Discover the wonders of Vigan, a UNESCO World Heritage Site. Explore the historic streets of Calle Crisologo, visit the Baluarte Zoo, and immerse yourself in the rich culture and heritage of this beautiful city."
+  },
+  "testimonials": {
+    "title": "TESTIMONIALS",
+    "description": "What our clients say about us.",
+    "reviews": {
+      "review_1": {
+        "title": null,
+        "review": "I recently stayed at Le Dream and was blown away by the excellent customer service from Carrie and Daryll at the front desk. From a warm welcome to swift problem-solving, their dedication and friendliness made my stay exceptional. They went above and beyond and I really appreciated them. Their personalized care truly set this hotel apart. Highly recommend.",
+        "author": "Summer Fenton",
+        "initials": "SF"
+      },
+      "review_2": {
+        "title": null,
+        "review": "This is hotel makes me feel like luxurious. The Hotel feels romantic and the food in resto is delicious.",
+        "author": "Jason Sandagon",
+        "initials": "JS"
+      },
+      "review_3": {
+        "title": null,
+        "review": "Lovely place..nice and beautiful with accommodating staffs too.",
+        "author": "Ma. Filma Perez",
+        "initials": "JS"
+      },
+      "review_4": {
+        "title": null,
+        "review": "My fiancee and I went here and loved this place, it's definitely the place to stay in Vigan. The service is above and beyond, the food is great and open later into the night than any other hotel which can be convenient for late nights. They can even serve breakfast through room service free of charge. The beds are very comfortable and the AC works really well. No complaints about this hotel, only good things can be said all around. Food & Drinks: We tried a lot of different food on the menu and all of it tasted fresh and amazing.",
+        "author": "Tyler Reyes",
+        "initials": "TR"
+      },
+      "review_5": {
+        "title": null,
+        "review": "The staff were very accommodating, respectful, and kind. One happy customer from the USA. Special thank you to the following staff: Junella, Arlene, Ace, and Danica!",
+        "author": "Eugene Fredeluces",
+        "initials": "TR"
+      }
+    }
   },
   "footer": {
     "visitUs": "Visit Us",

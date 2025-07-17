@@ -69,23 +69,62 @@
     "heading": "周辺観光",
     "description": "ユネスコ世界遺産の街・ビガンの魅力を発見しましょう。歴史的なカレ・クリソロゴ通りを散策し、バルアルテ動物園を訪れ、この美しい街の豊かな文化と伝統に浸ってください。"
   },
+  "testimonials": {
+    "title": "お客様の声",
+    "description": "お客様からの評価をご紹介します。",
+    "reviews": {
+      "review_1": {
+        "title": null,
+        "review": "最近Le Dreamに宿泊しましたが、フロントのCarrieさんとDaryllさんの素晴らしい対応に感動しました。温かいお迎えから迅速な問題対応まで、彼らの献身的で親しみやすい姿勢が滞在を特別なものにしてくれました。心から感謝しています。彼らのきめ細やかなサービスがこのホテルを際立たせています。ぜひおすすめします。",
+        "author": "Summer Fenton",
+        "initials": "SF"
+      },
+      "review_2": {
+        "title": null,
+        "review": "このホテルは贅沢な気分にさせてくれます。ロマンチックな雰囲気で、レストランの料理も美味しいです。",
+        "author": "Jason Sandagon",
+        "initials": "JS"
+      },
+      "review_3": {
+        "title": null,
+        "review": "素敵な場所……きれいで雰囲気が良く、スタッフも親切でした。",
+        "author": "Ma. Filma Perez",
+        "initials": "JS"
+      },
+      "review_4": {
+        "title": null,
+        "review": "婚約者と一緒にここを訪れ、この場所がとても気に入りました。ヴィガンで泊まるならここしかありません。サービスは期待以上で、食事も美味しく、他のホテルよりも夜遅くまで営業しているので便利です。ルームサービスで無料の朝食も提供してくれます。ベッドはとても快適で、エアコンもよく効きます。このホテルに悪いところは一つもありません。全体的に素晴らしいです。料理と飲み物：メニューのいろいろな料理を試しましたが、どれも新鮮で最高でした。",
+        "author": "Tyler Reyes",
+        "initials": "TR"
+      },
+      "review_5": {
+        "title": null,
+        "review": "スタッフはとても親切で、礼儀正しく、優しかったです。アメリカからの満足したお客様の一人です。以下のスタッフの皆さんに特別な感謝を：Junellaさん、Arleneさん、Aceさん、Danicaさん！",
+        "author": "Eugene Fredeluces"
+      }
+    }
+  },
   "footer": {
-    "visitUs": "所在地",
-    "location": "ヴィガン市タマグ地区",
+    "visitUs": "アクセス",
+    "location": "ビガン市タマグ村",
     "checkIn": "チェックイン：午後2時",
     "checkOut": "チェックアウト：正午12時",
-    "contact": "連絡先",
+    "contact": "お問い合わせ",
     "landline": "固定電話：077-644-3273",
     "frontOffice": "フロントオフィス：（+63）956-974-3213",
     "reservations": "予約：（+63）956-974-3211",
     "email": "hotelledream@gmail.com",
-    "terms": "利用規約と方針",
+    "terms": "利用規約・方針",
     "privacy": "プライバシーポリシー",
     "safety": "安全とセキュリティ",
     "conditions": "利用規約",
     "conduct": "サプライヤー行動規範",
     "quicklinks": "クイックリンク",
-    "aboutUs": "私たちについて",
-    "copyright": "©2025 ル・ドリームホテル、全著作権所有"
+    "rooms": "客室",
+    "amenities": "設備",
+    "barResto": "バー＋レストラン",
+    "explore": "周辺案内",
+    "aboutUs": "当ホテルについて",
+    "copyright": "©2025 ル・ドリームホテル 無断転載を禁じます"
   }
 }

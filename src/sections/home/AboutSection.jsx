@@ -17,8 +17,8 @@ const AboutSection = () => {
         />
 
         {/* Text Content */}
-        <div className="flex flex-col justify-center gap-y-6 text-center lg:text-left">
-          <h1 className="heading-section-responsive font-garamond">
+        <div className="flex flex-col justify-center gap-y-6 text-left">
+          <h1 className="heading-section-responsive font-garamond text-center">
             <Trans i18nKey="about.title">About Le Dream Hotel</Trans>
           </h1>
 

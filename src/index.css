@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-width: thin;
+
 }
 
 .font-heading {
@@ -31,7 +31,7 @@ html {
 }
 
 .font-header {
-  @apply font-montserrat font-bold text-black
+  @apply font-montserrat font-bold text-primary
 }
 
 .font-body-black {
@@ -39,11 +39,15 @@ html {
 }
 
 .heading-section-responsive {
-  @apply font-montserrat font-bold text-3xl 2xl:text-4xl
+  @apply font-montserrat font-bold text-2xl 2xl:text-4xl
 }
 
 .custom-container {
-  @apply mx-auto px-5 md:px-7 lg:px-9 max-w-[1440px]
+  @apply mx-auto px-5 md:px-6 lg:px-9 max-w-[1440px]
+}
+
+.section-padding {
+  @apply py-8 lg:py-20
 }
 
 .footer-link-hover {
@@ -71,20 +75,37 @@ html {
   @apply scale-x-100 origin-left;
 }
 
-.swiper-pagination {
-  display: none;
+.primary-gradient {
+  background: linear-gradient(to right, #172554, #2a5cad);
+}
+
+.swiper-pagination>span {
+  @apply bg-tertiary
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  color: var(--color-white);
+  @apply font-light scale-[0.7] px-4 py-2 rounded-full hidden lg:block;
+  color: white;
   background-color: var(--color-primary);
   z-index: 100;
-  @apply rounded-full py-2 px-5 hidden lg:flex
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  margin-inline: 1rem;
-  z-index: 1000;
+  margin-inline: 0.5rem;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  @apply size-2
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-none bg-primary;
+
 }

@@ -28,7 +28,7 @@ const CardsSection = () => {
             {t("cards.description")}
           </p>
           <div className="">
-            <LearnMoreButton />
+            <LearnMoreButton linkId={"video-section"} />
           </div>
         </div>
         {/* Right cards */}

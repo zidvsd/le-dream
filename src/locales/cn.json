@@ -68,13 +68,49 @@
     "heading": "探索维甘",
     "description": "探索维甘这座联合国教科文组织世界遗产城市的魅力。漫步在历史悠久的 Crisologo 街，参观巴鲁阿特动物园，沉浸于这座美丽城市的丰富文化与历史之中。"
   },
+  "testimonials": {
+    "title": "客户评价",
+    "description": "客户对我们的评价。",
+    "reviews": {
+      "review_1": {
+        "title": null,
+        "review": "我最近入住了 Le Dream 酒店，对前台 Carrie 和 Daryll 的优质服务印象深刻。从热情迎接到迅速解决问题，他们的敬业和友好让我的住宿体验非常出色。他们的服务超出了我的预期，我非常感激。他们的个性化关怀让这家酒店与众不同。强烈推荐。",
+        "author": "Summer Fenton",
+        "initials": "SF"
+      },
+      "review_2": {
+        "title": null,
+        "review": "这家酒店让我感到奢华。氛围浪漫，餐厅的食物也很美味。",
+        "author": "Jason Sandagon",
+        "initials": "JS"
+      },
+      "review_3": {
+        "title": null,
+        "review": "可爱的地方……环境优美，员工也很亲切热情。",
+        "author": "Ma. Filma Perez",
+        "initials": "JS"
+      },
+      "review_4": {
+        "title": null,
+        "review": "我和未婚妻来这里旅行，非常喜欢这个地方，这是在维甘住宿的最佳选择。服务周到，餐饮美味，而且营业时间比其他酒店更晚，非常方便。他们甚至可以免费送早餐到房间。床非常舒适，空调也很好。对这家酒店没有任何不满，满满的好评。食物和饮品：我们尝试了很多菜单上的菜品，都非常新鲜美味。",
+        "author": "Tyler Reyes",
+        "initials": "TR"
+      },
+      "review_5": {
+        "title": null,
+        "review": "员工非常热情、有礼貌和友善。我是来自美国的一位满意客户。特别感谢以下员工：Junella、Arlene、Ace 和 Danica！",
+        "author": "Eugene Fredeluces",
+        "initials": "TR"
+      }
+    }
+  },
   "footer": {
     "visitUs": "访问我们",
-    "location": "维甘市塔马格区",
+    "location": "维甘市Tamag村",
     "checkIn": "入住时间：下午2点",
     "checkOut": "退房时间：中午12点",
     "contact": "联系方式",
-    "landline": "电话：077-644-3273",
+    "landline": "座机：077-644-3273",
     "frontOffice": "前台：（+63）956-974-3213",
     "reservations": "预订：（+63）956-974-3211",
     "email": "hotelledream@gmail.com",
@@ -82,13 +118,13 @@
     "privacy": "隐私政策",
     "safety": "安全与保障",
     "conditions": "条款与条件",
-    "conduct": "供应商行为守则",
+    "conduct": "供应商行为准则",
     "quicklinks": "快速链接",
     "rooms": "客房",
     "amenities": "设施",
-    "barResto": "酒吧+餐厅",
+    "barResto": "酒吧＋餐厅",
     "explore": "探索",
     "aboutUs": "关于我们",
-    "copyright": "©2025 Le Dream 酒店，版权所有"
+    "copyright": "©2025 Le Dream酒店 版权所有"
   }
 }

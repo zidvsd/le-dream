@@ -7,6 +7,7 @@ import RoomsSection from "../../sections/home/RoomsSection";
 import AmenitiesSection from "../../sections/home/AmenitiesSection";
 import BarRestoSection from "../../sections/home/BarRestoSection";
 import ExploreSection from "../../sections/home/ExploreSection";
+import Testimonials from "../components/Testimonials";
 const HomePage = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const HomePage = () => {
       <AmenitiesSection />
       <BarRestoSection />
       <ExploreSection />
+      <Testimonials />
     </div>
   );
 };
