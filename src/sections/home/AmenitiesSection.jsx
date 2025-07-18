@@ -1,7 +1,7 @@
 import React, { useTransition } from "react";
 import { useTranslation } from "react-i18next";
 import LearnMoreButton from "../../assets/components/buttons/LearnMoreButton";
-import ImgCarousel from "../../assets/components/imgCarousel";
+import ImgCarousel from "../../assets/components/ImgCarousel";
 const AmenitiesSection = () => {
   const { t } = useTranslation();
 
