@@ -2,6 +2,7 @@ import React, { useTransition } from "react";
 import { useTranslation } from "react-i18next";
 import LearnMoreButton from "../../assets/components/buttons/LearnMoreButton";
 import ImgCarousel from "../../assets/components/ImgCarousel";
+import { Facebook, Instagram } from "lucide-react";
 const BarResto = () => {
   const { t } = useTranslation();
 
@@ -16,8 +17,22 @@ const BarResto = () => {
           <p className="font-body-black max-w-lg text-neutral-600 lg:text-lg">
             {t("resto-bar.description")}
           </p>
-          <div className="max-w-1/2 place-self-start lg:place-self-start">
+          <div className="flex w-full flex-row justify-between gap-y-4 place-self-start lg:flex-col-reverse lg:place-self-start">
             <LearnMoreButton route={"bar-resto"} />
+            <div className="flex flex-row gap-x-2">
+              <a
+                className="hover-opacity"
+                href="https://www.facebook.com/people/LAKs-Bar-Resto/61552337578680/"
+              >
+                <Facebook href="" />
+              </a>
+              <a
+                className="hover-opacity"
+                href="https://www.instagram.com/laks.restobar/"
+              >
+                <Instagram href="" />
+              </a>
+            </div>
           </div>
         </div>
         {/* carousel*/}
