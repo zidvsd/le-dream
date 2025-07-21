@@ -13,7 +13,6 @@ const Testimonials = (slidesPerView = 3) => {
   const { t } = useTranslation();
   const rawReviews = t("testimonials.reviews", { returnObjects: true });
   const reviews = Object.values(rawReviews);
-  console.log(reviews.length);
 
   return (
     <section

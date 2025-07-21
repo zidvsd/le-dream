@@ -24,13 +24,13 @@ const BarResto = () => {
                 className="hover-opacity"
                 href="https://www.facebook.com/people/LAKs-Bar-Resto/61552337578680/"
               >
-                <Facebook href="" />
+                <Facebook />
               </a>
               <a
                 className="hover-opacity"
                 href="https://www.instagram.com/laks.restobar/"
               >
-                <Instagram href="" />
+                <Instagram />
               </a>
             </div>
           </div>

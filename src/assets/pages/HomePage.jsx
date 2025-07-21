@@ -8,7 +8,9 @@ import AmenitiesSection from "../../sections/home/AmenitiesSection";
 import BarRestoSection from "../../sections/home/BarRestoSection";
 import ExploreSection from "../../sections/home/ExploreSection";
 import Testimonials from "../components/Testimonials";
+import { useRef } from "react";
 const HomePage = () => {
+  const firstSectionRef = useRef();
   return (
     <div>
       <HeroSection />
