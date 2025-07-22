@@ -9,7 +9,8 @@
     "backHome": "ホームに戻る",
     "bookNow": "今すぐ予約",
     "learnMore": "もっと詳しく",
-    "scroll": "スクロール"
+    "scroll": "スクロール",
+    "backToTop": "トップに戻る"
   },
   "hero": {
     "welcome": "ようこそ",
@@ -107,7 +108,7 @@
   },
   "maps": {
     "title": "所在地",
-    "description": "簡単に見つけられます"
+    "description": "簡単に見つけられます."
   },
 
   "footer": {

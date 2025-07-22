@@ -9,7 +9,8 @@
     "backHome": "返回主页",
     "bookNow": "立即预订",
     "learnMore": "了解更多",
-    "scroll": "滚动"
+    "scroll": "滚动",
+    "backToTop": "返回顶部"
   },
   "hero": {
     "welcome": "欢迎来到",
@@ -106,7 +107,7 @@
   },
   "maps": {
     "title": "所在地",
-    "description": "簡単に見つけられます"
+    "description": "簡単に見つけられます."
   },
   "footer": {
     "visitUs": "访问我们",

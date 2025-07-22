@@ -1,7 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { MapPin } from "lucide-react";
-
+import BackToTopButton from "../../assets/components/buttons/BackToTopButton";
 const LocationSection = () => {
   const { t } = useTranslation();
 
@@ -32,6 +31,8 @@ const LocationSection = () => {
           allowFullScreen=""
         ></iframe>
       </div>
+
+      <BackToTopButton />
     </div>
   );
 };

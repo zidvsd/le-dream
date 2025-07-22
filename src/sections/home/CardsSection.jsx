@@ -9,9 +9,9 @@ import {
   BedDouble,
   MapPinned,
 } from "lucide-react";
-
+import { navs } from "../../utils/navLinks";
 const icons = [BedDouble, Utensils, ConciergeBell, MapPinned];
-
+const paths = navs.map((nav, index) => nav.path);
 const CardsSection = () => {
   const { t } = useTranslation();
   const cardItems = t("cards.items", { returnObjects: true });
@@ -37,7 +37,7 @@ const CardsSection = () => {
             const Icon = icons[id];
             return (
               <Link
-                to={`/${""}`}
+                to={`/${paths[id]}`}
                 key={id}
                 className="hover:border-b-primary hover-utility flex h-full flex-col justify-between rounded-xl border border-b-4 border-neutral-200 border-b-transparent bg-white p-6 text-left shadow-md hover:shadow-xl"
               >

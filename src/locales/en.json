@@ -9,7 +9,8 @@
     "backHome": "Back to Home",
     "bookNow": "BOOK NOW",
     "learnMore": "Learn more",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "backToTop": "BACK TO TOP"
   },
   "hero": {
     "welcome": "WELCOME TO",
@@ -107,7 +108,7 @@
   },
   "maps": {
     "title": "LOCATION",
-    "description": "Find us Easily"
+    "description": "Find us Easily."
   },
   "footer": {
     "visitUs": "Visit Us",
