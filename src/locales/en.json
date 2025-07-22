@@ -105,6 +105,10 @@
       }
     }
   },
+  "maps": {
+    "title": "LOCATION",
+    "description": "Find us Easily"
+  },
   "footer": {
     "visitUs": "Visit Us",
     "location": "Brgy. Tamag, City of Vigan",

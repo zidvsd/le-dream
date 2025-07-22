@@ -104,6 +104,10 @@
       }
     }
   },
+  "maps": {
+    "title": "所在地",
+    "description": "簡単に見つけられます"
+  },
   "footer": {
     "visitUs": "访问我们",
     "location": "维甘市Tamag村",

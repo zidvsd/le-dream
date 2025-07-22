@@ -8,9 +8,8 @@ import AmenitiesSection from "../../sections/home/AmenitiesSection";
 import BarRestoSection from "../../sections/home/BarRestoSection";
 import ExploreSection from "../../sections/home/ExploreSection";
 import Testimonials from "../components/Testimonials";
-import { useRef } from "react";
+import LocationSection from "../../sections/home/LocationSection";
 const HomePage = () => {
-  const firstSectionRef = useRef();
   return (
     <div>
       <HeroSection />
@@ -22,6 +21,7 @@ const HomePage = () => {
       <BarRestoSection />
       <ExploreSection />
       <Testimonials />
+      <LocationSection />
     </div>
   );
 };

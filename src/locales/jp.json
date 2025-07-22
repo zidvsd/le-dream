@@ -105,6 +105,11 @@
       }
     }
   },
+  "maps": {
+    "title": "所在地",
+    "description": "簡単に見つけられます"
+  },
+
   "footer": {
     "visitUs": "アクセス",
     "location": "ビガン市タマグ村",
