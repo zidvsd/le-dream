@@ -39,7 +39,7 @@ const CardsSection = () => {
               <Link
                 to={`/${paths[id]}`}
                 key={id}
-                className="hover:border-b-primary hover-utility flex h-full flex-col justify-between rounded-xl border border-b-4 border-neutral-200 border-b-transparent bg-white p-6 text-left shadow-md hover:shadow-xl"
+                className="hover:border-b-primary active:border-b-primary hover-utility flex h-full flex-col justify-between rounded-xl border border-b-4 border-neutral-200 border-b-transparent bg-white p-6 text-left shadow-md hover:shadow-xl"
               >
                 <div className="flex flex-col items-start gap-y-3">
                   <div className="text-4xl">
